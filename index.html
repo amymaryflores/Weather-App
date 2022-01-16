@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <style src="style.css"></style>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-container">
+        <div class="clearfix">
+          <form id="weather__form" class="float-left">
+            <input
+              type="text"
+              id="weather__form-location"
+              placeholder="Enter a city"
+              autocomplete="off"
+              autofocus="on"
+            />
+            <input type="submit" value="Search" class="btn btn-primary" />
+          </form>
+          <button id="weather-refresh" class="float-left btn btn-success">
+            Current Location
+          </button>
+        </div>
+
+        <h1>Worcester, MA</h1>
+       <img
+      class="weather__icon weather__icon--today"
+    src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+        /> 
+        <h4>25 °F</h4>
+       <h2>Sunny</h2>
+      <h3>Sunday 1:05pm</h3>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-4">
+          <strong>Precipitation</strong>
+          <div>0%</div>
+        </div>
+        <div class="col-4">
+          <strong>Humidity</strong>
+          <div>25%</div>
+        </div>
+        <div class="col-4">
+          <strong>Wind</strong>
+          <div>4 mph</div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="row row-cols-7 text-center">
+        <div class="col">
+          <img
+            class="rain"
+            alt="Rain"
+            src="//ssl.gstatic.com/onebox/weather/48/rain.png"
+            data-atf="1"
+            data-frt="0"
+          />
+          <div>Monday</div>
+          <div>43° 21°</div>
+        </div>
+        <div class="col">
+          <img
+            class="cloudy"
+            alt="cloudy"
+            src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png"
+            data-atf="1"
+            data-frt="0"
+          />
+          <div>Tuesday</div>
+          <div>25° 13°</div>
+        </div>
+        <div class="col">
+          <img
+            class="cloudy"
+            alt="cloudy"
+            src="https://ssl.gstatic.com/onebox/weather/48/cloudy.png"
+            data-atf="1"
+            data-frt="0"
+          />
+          <div>Wednesday</div>
+          <div>42° 28°</div>
+        </div>
+        <div class="col">
+          <img
+            class="partly_cloudy"
+            alt="cloudy"
+            src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+            data-atf="1"
+            data-frt="0"
+          />
+          <div>Thurday</div>
+          <div>31° 7°</div>
+        </div>
+        <div class="col">
+          <img
+            class="partly_cloudy"
+            alt="cloudy"
+            src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+            data-atf="1"
+            data-frt="0"
+          />
+          <div>Friday</div>
+          <div>20° 8°</div>
+              </div
+          </div>
+        </div>
+      </div>
+      <small
+        ><a href="https://github.com/amymaryflores/Weather-App" target="_blank"
+          >Open-source code</a
+        >, by Amy Flores</small
+      >
+    </div>
+</div>
+<script src="script.js"></script>
+  </body>
+</html>
